@@ -12,9 +12,22 @@ namespace SwappingElephants
 {
     public partial class Form1 : Form
     {
+        Elephant lucinda;
+        Elephant lloyd;
+
         public Form1()
         {
             InitializeComponent();
+            lucinda = new Elephant()
+            {
+                Name = "Lucinda",
+                EarSize = 33
+            };
+            lloyd = new Elephant()
+            {
+                Name = "Lloyd",
+                EarSize = 40
+            };
         }
     }
 }
