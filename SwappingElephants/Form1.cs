@@ -29,5 +29,24 @@ namespace SwappingElephants
                 EarSize = 40
             };
         }
+
+        private void lloydButton_Click(object sender, EventArgs e)
+        {
+            lloyd.WhoAmI();
+        }
+
+        private void lucindaButton_Click(object sender, EventArgs e)
+        {
+            lucinda.WhoAmI();
+        }
+
+        private void swapButton_Click(object sender, EventArgs e)
+        {
+            Elephant holder;
+            holder = lloyd;
+            lloyd = lucinda;
+            lucinda = holder;
+            MessageBox.Show("Objects Swapped");
+        }
     }
 }
