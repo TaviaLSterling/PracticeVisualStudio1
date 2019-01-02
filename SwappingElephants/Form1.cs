@@ -34,7 +34,7 @@ namespace SwappingElephants
         {
             lloyd.WhoAmI();
         }
-
+     
         private void lucindaButton_Click(object sender, EventArgs e)
         {
             lucinda.WhoAmI();
@@ -44,6 +44,7 @@ namespace SwappingElephants
         {
             Elephant holder;
             holder = lloyd;
+            lloyd.TellMe("Hi", lucinda);
             lloyd = lucinda;
             lucinda = holder;
             MessageBox.Show("Objects Swapped");
