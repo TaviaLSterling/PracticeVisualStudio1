@@ -20,6 +20,10 @@ namespace SwappingElephants
         {
             MessageBox.Show(whoSaidIt.Name + " says: " + message);
         }
+        public void SpeakTo(Elephant whoToTalkTo, string message)
+        {
+            whoToTalkTo.TellMe(message, this);
+        }
 
     }
 }
